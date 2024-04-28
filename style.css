@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color : #FC4100;
+    --text-color : #FFC55A;
+    --snd-bg-color: #00215E;
+    --main-color: #2C4E80;
+}
+.msg-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-right: 400px;
+    margin-left: 400px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    height: 100px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.msg-container button{
+    border-radius: 10px;
+    height: 3rem;
+    width: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-color: var(--snd-bg-color);
+    color: var(--text-color);
+}
+.hide{
+    display: none;
+}
+
