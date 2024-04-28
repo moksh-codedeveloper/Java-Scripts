@@ -73,8 +73,8 @@ main .container{
     text-align: center;
 }
 main .container .game{
-    height: 20rem;
-    width: 10rem;
+    height: 300px;
+    width: 300px;
     background-color: var(--background-color);
     border-radius: 10px;
     justify-content: center;
