@@ -46,11 +46,12 @@ const checkWin = () => {
         let pos1 = boxes[pattern[0]].innerText;
         let pos2 = boxes[pattern[1]].innerText;
         let pos3 = boxes[pattern[2]].innerText;
-        
         if(pos1 != "" && pos2 !="" && pos3 != ""){
             if(pos1 === pos2 && pos2 === pos3){
-                alert("Congragulations you have successfully win the game!");
                 showWinner(pos1);
+                alert("Congragulations you have successfully win the game!");
+            } else {
+                alert("the game is drawn");
             }
         }
     }
