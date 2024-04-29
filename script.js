@@ -50,8 +50,6 @@ const checkWin = () => {
             if(pos1 === pos2 && pos2 === pos3){
                 showWinner(pos1);
                 alert("Congragulations you have successfully win the game!");
-            } else {
-                alert("the game is drawn");
             }
         }
     }
