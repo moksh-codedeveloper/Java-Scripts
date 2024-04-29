@@ -16,14 +16,15 @@
 
 .msg-container{
     height: 10rem;
-    background-color:var(--background-color);
-    color:var(--text-color);
+    padding: 1rem;
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
 }
 #new-btn{
     height: 3rem;
     width: 4rem;
-    padding-bottom: 0.1rem;
-    margin-top: 2rem;
     border-radius: 10px;
 }
 .hide{
@@ -36,6 +37,9 @@ main h1{
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
+    color: var(--text-color);
+    text-shadow: 1px 2px 1px var(--snd-bg-color);
+    cursor: default;
 }
 .container{
     display: flex;
@@ -47,10 +51,61 @@ main h1{
     text-align: center;
     align-items: center;
 }
-
+.box:hover{
+    content: '';
+    transform: translate(-3px);
+    transition: all .5s ease;
+    background-color: var(--snd-bg-color);
+    box-shadow: 1px 2px 0.3px var(--text-color);
+}
 .box{
     height: 50px;
     width: 50px;
     border-radius: 10px;
+    justify-content: space-between;
+    display: flex;
+    flex: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
+.game{
+    /* width: 30vw; */
+    padding: 1rem;
+    margin: 1rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 2fr);
+}
+
+#reset-btn{
+    height: 4rem;
+    width: 6rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 45rem;
+    border-radius: 50px;
+}
+
+#reset-btn:hover{
+    background-color: var(--snd-bg-color);
+    color: var(--main-color);
+    text-shadow: 1px 2px 3px  var(--text-color);
+    box-shadow: 1px 3px 2px var(--snd-bg-color);
+}
+
+@media(max-width: 992px) {
+    #reset-btn{
+        padding: 1rem;
+        margin-left: 10rem;
+        margin-top: 4rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
 }
