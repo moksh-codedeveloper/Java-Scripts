@@ -112,6 +112,7 @@ main h1{
         padding: 1rem;
         position: relative;
         height: 10rem;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
