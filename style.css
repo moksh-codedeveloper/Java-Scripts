@@ -117,6 +117,9 @@ main h1{
         align-items: center;
         text-align: center;
     }
+    .hide{
+        display: none;
+    }
     #new-btn{
         margin-top: 1rem;
     }
